@@ -7,7 +7,7 @@ public class Main {
     //1
     {
         int age = 17;
-        for (int i = 0; i < 1; i++)
+
             if (age >= 18) System.out.println("Ваш возраст " + age + ", это больше 18 лет, вы совершеннолетний");
             else {
                 System.out.println("Ваш возраст " + age + ", не достиг совершеннолетия, нужно немного подождать");
@@ -15,7 +15,7 @@ public class Main {
         //2
 
         int temperature = 2;
-        for (int i = 0; i < 1; i++)
+
             if (temperature >= 5) System.out.println("На улице " + temperature + ",  градусов, можно идти без шапки");
             else {
                 System.out.println("На улице " + temperature + ",  градусов, нужно надеть шапку");
@@ -33,8 +33,8 @@ public class Main {
 
         int HumanAge = 13;
         int SwitchV = 0;
-        for (int i = 0; i < 1; i++)
-            if (HumanAge > 1 && HumanAge < 7)
+
+        if (HumanAge > 1 && HumanAge < 7)
                 SwitchV = 1;
         if (HumanAge > 6 && HumanAge < 18)
             SwitchV = 2;
@@ -65,8 +65,8 @@ public class Main {
         int SwitchVa = 0;
         int ChildAge = 27;
         Boolean HasParent = Boolean.FALSE;
-        for (int i = 0; i < 1; i++)
-            if (ChildAge < 5)
+
+        if (ChildAge < 5)
                 SwitchVa = 1;
 
         if (ChildAge >= 5 && ChildAge < 14 && HasParent == Boolean.TRUE)
@@ -130,7 +130,7 @@ public class Main {
         }
         //9
         int clientOS1 = 0; // 0 — iOS, 1 — Android
-        int clientDeviceYear = 2012;
+        int clientDeviceYear = 2014;
         boolean isLightVersionNeeded = clientDeviceYear < 2015;
         String appName1 = null;
         String versionType = isLightVersionNeeded ? " облегчённую " : " ";
